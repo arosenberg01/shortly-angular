@@ -1,12 +1,11 @@
 
-<div id='shorten'>
-  <h1>signin</h1>
-  <form name="signinForm" ng-submit='signin()'>
-    <input type='text'ng-model='user.username'>
-    <input type="password" ng-model='user.password'>
-    <button>signin</button>
+<div id='container'>
+  <h1>Shorten a link</h1>
+  <form name="shortenLink" ng-submit='addLink()'>
+    <input type='text' ng-model='link.url'>
+    <button>Shorten</button>
   </form>
-  <a href="#/signup">Don't have an account? <strong>Signup</strong> ...</a>
+
 </div>
 
 

@@ -1,3 +1,7 @@
 <div id='container'>
-  <!-- Your html here -->
+
+    <li ng-repeat="link in data.links">
+    <a href="{{ link.url }}">{{ link.code }}</a>
+    </li>
+
 </div>
