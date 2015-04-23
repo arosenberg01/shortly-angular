@@ -1,8 +1,16 @@
 <div id='container'>
 
-    <li ng-repeat="link in data.links">
+<label>Search: <input ng-model="searchText"></label>
+<table id="searchTextResults">
+  <tr ng-repeat="link in data.links | filter:searchText | orderBy: '-visits'">
+    <td><a href="{{ 'api/links/' + link.code }}">{{ link.code }}</a></td>
+    <td>{{ link.visits }}</td>
+  </tr>
+</table>
+
+ <!--    <li ng-repeat="link in data.links | orderBy:-visits">
     <a ng-click="addCount(link)" href="{{ 'api/links/' + link.code }}">{{ link.code }}</a>
     {{ link.visits }}
-    </li>
+    </li> -->
 
 </div>
