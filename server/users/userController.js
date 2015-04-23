@@ -4,6 +4,7 @@ var User = require('./userModel.js'),
 
 module.exports = {
   signin: function (req, res, next) {
+    console.log('sign in attempt!');
     var username = req.body.username,
         password = req.body.password;
 
@@ -30,6 +31,7 @@ module.exports = {
   },
 
   signup: function (req, res, next) {
+    console.log('signing up!');
     var username  = req.body.username,
         password  = req.body.password,
         create,
