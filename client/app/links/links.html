@@ -1,7 +1,8 @@
 <div id='container'>
 
     <li ng-repeat="link in data.links">
-    <a href="{{ link.url }}">{{ link.code }}</a>
+    <a ng-click="addCount(link)" href="{{ 'api/links/' + link.code }}">{{ link.code }}</a>
+    {{ link.visits }}
     </li>
 
 </div>

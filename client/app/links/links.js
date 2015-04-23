@@ -9,5 +9,11 @@ angular.module('shortly.links', [])
     });
   };
 
+  // $scope.addCount = function(link) {
+  //   Links.addCount(link).then(function(data) {
+  //     $scope.data.links = data;
+  //   });
+  // }
+
   $scope.getLinks();
 });
