@@ -1,5 +1,27 @@
 <div id='container'>
 
+
+
+<label>Search: <input ng-model="searchText"></label>
+
+<div ng-links class="info"></div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 
+<div id='container'>
+
 <label>Search: <input ng-model="searchText"></label>
 <table id="searchTextResults">
   <tr ng-repeat="link in data.links | filter:searchText | orderBy: '-visits'">
@@ -8,9 +30,5 @@
   </tr>
 </table>
 
- <!--    <li ng-repeat="link in data.links | orderBy:-visits">
-    <a ng-click="addCount(link)" href="{{ 'api/links/' + link.code }}">{{ link.code }}</a>
-    {{ link.visits }}
-    </li> -->
 
-</div>
+</div> -->

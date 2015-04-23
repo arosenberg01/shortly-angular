@@ -73,11 +73,13 @@ h1 {
   float: right;
   margin-right: 10px;
   margin-left: 20px;
+  display: inline;
 }
 
 .link .visits .count {
   font-size: 46px;
   font-weight: 600;
+  display: inline;
 }
 
 .link .title {
@@ -87,7 +89,7 @@ h1 {
 .link .original {
   color: #aaa;
   font-size: 12px;
-}
+}s
 
 .link .info {
   margin-left: 55px;
